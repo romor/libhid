@@ -1,10 +1,14 @@
 libhid
 ======
 
-This is just an import of the svn of libhid at svn://svn.debian.org/libhid/trunk
+This is just a fork of https://github.com/chad3814/libhid where I tried to resolve some build issues and the SWIG Python bindings.
+chad3814/libhid is also just a fork of the original development at svn://svn.debian.org/libhid/trunk, which seems to be inactive since several years.
+So, we are both not the maintainer and did not really touch the code at all.
 
-I am not the maintainer. If you want to build, run the autogen.sh in the top-level directory followed by make.
-
-libhid is under the GPL v2. This sucks for libraries, blah blah blah. Unless the hidparser component (from MGE) is either rewritten or relicensed there's nothing that can be done. See https://github.com/chad3814/libhid/blob/master/README.licence
+If you want to build:
+ - ensure to have the following packages installed: autoconf, automake, libtool, libusb-dev, xsltproc, docbook-xsl, gcc, debhelper, pkg-config
+ - for using SWIG, you also need: swig, python3-dev, python3
+ - to build, run the autogen.sh in the top-level directory followed by make, and potentially make install
 
 See https://github.com/chad3814/libhid/blob/master/README.svn for the original README from svn.
+Also the original license keeps valid.
